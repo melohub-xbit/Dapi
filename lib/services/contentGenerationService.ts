@@ -98,8 +98,8 @@ export class ContentGenerationService {
       { lessonNumber: 4, vocabCount: 15, sentenceCount: 5, allowedWordGames: ['mahjong'] } // Only mahjong for lesson 4
     ];
 
-    let usedVocabHashes = new Set<string>();
-    let usedSentenceHashes = new Set<string>();
+    const usedVocabHashes = new Set<string>();
+    const usedSentenceHashes = new Set<string>();
 
     for (const plan of lessonPlans) {
       // Select vocabulary (avoid already used)
